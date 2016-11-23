@@ -54,4 +54,3 @@ class DatabaseWrapper(DjDatabaseWrapper):
         if self.connection is not None:
             with self.wrap_database_errors:
                 return self.pool.release(self.connection)
-
